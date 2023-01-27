@@ -1,0 +1,596 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  color: #444444;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5faee3;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+  background: #ffffff;
+  padding: 22px 0;
+  transition: all 0.5s;
+  z-index: 999;
+}
+
+.header.header_scrolled {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 12px 0;
+}
+
+.header_logo_link {
+  text-decoration: none;
+}
+
+.logo {
+  color: #222222;
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.header_navbar {}
+
+.header_navbar_links {
+  list-style: none;
+}
+
+.navbar_link {
+  Padding: 10px 0px 10px 30px;
+  color: #555555;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.navbar_link:hover {
+  color: #3498db;
+}
+
+.dropdown:hover .dropdown_links {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.dropdown i {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.dropdown_links {
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  display: block;
+  left: 30px;
+  list-style: none;
+  padding: 10px;
+  position: absolute;
+  top: calc(100% + 30px);
+  transition: 0.3s;
+  visibility: hidden;
+  z-index: 99;
+}
+
+.dropdown_links li {
+  min-width: 125px;
+}
+
+.dropdown_link {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.navbar_cta {
+  background: #3498db;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 15px;
+  margin-left: 30px;
+  padding: 8px 25px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar_cta:hover {
+  background: #4aa3df;
+  color: #ffffff;
+}
+
+/**
+* Mobile Navigation 
+*/
+.navbar_mobile_toggle {
+  color: #222222;
+  cursor: pointer;
+  display: none;
+  font-size: 28px;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  #hero {
+    height: 100vh;
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  height: 70vh;
+  margin-top: 70px;
+  overflow: hidden;
+  padding: 60px;
+  width: 100%;
+}
+
+.hero_content {}
+
+.hero_title {
+  color: black;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  margin: 0 0 10px 0;
+}
+
+.hero_text {
+  color: #484848;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+.hero_btn {
+  border: 2px solid #3498db;
+  border-radius: 50px;
+  color: #3498db;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 20px;
+  }
+
+  .hero_title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .hero_text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  .hero .hero-img img {
+    width: 850%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients {
+  background: #f3f9fd;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.client_logo .col-lg-2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.client_logo img {
+  filter: grayscale(100);
+  padding: 10px 0;
+  transition: all 0.4s ease-in-out;
+  width: 50%;
+}
+
+/*--------------------------------------------------------------
+# About Us Section
+--------------------------------------------------------------*/
+.about {
+  padding: 60px 0px;
+}
+
+.about_title {
+  color: #222222;
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.about_title h2 {
+  color: #222222;
+  font-size: 700 32px;
+  margin: 0px 0px 8px;
+}
+
+.about_title h2::before,
+.about_title h2::after {
+  background: #3498db;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 50px;
+}
+
+.about_title h2::before {
+  margin: 0 15px 10px 0;
+}
+
+.about_title h2::after {
+  margin: 0 0 10px 15px;
+}
+
+.about_content {}
+
+.about_content p {
+  color: #444444;
+  font-size: 16px;
+  margin: 0px 0px 16px;
+}
+
+.about_check_list {}
+
+.check_list_item {
+  padding-left: 28px;
+  position: relative;
+}
+
+.check_list_item i {
+  color: #3498db;
+  font-size: 20px;
+  left: 0;
+  line-height: 1;
+  position: absolute;
+  top: 2px;
+}
+
+.about_btn {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #3498db;
+  border-radius: 50px;
+  color: #3498db;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-top: 6px;
+  padding: 12px 32px;
+  transition: 0.3s;
+}
+
+/*--------------------------------------------------------------
+# Counts Section
+--------------------------------------------------------------*/
+.counts {
+  padding-bottom: 60px;
+}
+
+.counts_img {}
+
+.counts_numbers {}
+
+.count_box {
+  padding: 20px 0;
+}
+
+.count_box_number {
+  color: #222222;
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-left: 50px;
+}
+
+.count_box i {
+  box-sizing: border-box;
+  color: #3498db;
+  display: block;
+  float: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  line-height: 0;
+}
+
+.count_box p {
+  box-sizing: border-box;
+  color: #484848;
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: 50px;
+  padding-top: 15px;
+}
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services {
+  padding: 60px 0;
+}
+
+.services_title {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.services_title h2 {
+  color: #222222;
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.services_title h2::before,
+.services_title h2::after {
+  background: #3498db;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 50px;
+}
+
+.services_title h2::before {
+  margin: 0 15px 10px 0;
+}
+
+.services_title h2::after {
+  margin: 0 0 10px 15px;
+}
+
+.services_title p {
+  display: block;
+  margin: 15px 0 0 0;
+}
+
+.service_box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.service_box::before {
+  background: #e1f0fa;
+  border-radius: 50px;
+  content: "";
+  height: 100px;
+  position: absolute;
+  right: -60px;
+  top: -40px;
+  transition: all 0.3s;
+  width: 100px;
+  z-index: -1;
+}
+
+.service_icon {
+  background: #3498db;
+  border-radius: 50%;
+  display: inline-block;
+  height: 60px;
+  margin: 0 auto 20px auto;
+  padding-top: 10px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  width: 60px;
+}
+
+.service_icon i {
+  color: #fff;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.service_title {
+  box-sizing: border-box;
+  color: #444444;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+
+.service_description {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.more-services {}
+
+.service_card {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  border-radius: 5px;
+  padding: 160px 20px 20px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.service_card_body {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  padding: 30px;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.card_body_title {
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+.card_body_description {
+  box-sizing: border-box;
+  color: #5e5e5e;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  margin-bottom: 1rem;
+  margin-top: 0px;
+  word-wrap: break-word;
+}
+
+.card_body_link a {
+  box-sizing: border-box;
+  color: #777777;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  word-wrap: break-word;
+}
+
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+.features {
+  padding-top: 60px;
+}
+
+.features_title {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.features_title h2 {
+  color: #222222;
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.features_title h2::before,
+.features_title h2::after {
+  background: #3498db;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 50px;
+}
+
+.features_title h2::before {
+  margin: 0 15px 10px 0;
+}
+
+.features_title h2::after {
+  margin: 0 0 10px 15px;
+}
+
+.features_title p {
+  display: block;
+  margin: 15px 0 0 0;
+}
+
+.feature_box {
+  align-items: center;
+  background: #f6f6f6;
+  display: flex;
+  padding: 20px;
+}
+
+.feature_box i {
+  font-size: 32px;
+  line-height: 1;
+  padding-right: 10px;
+}
+
+.feature_box_title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.feature_box_title a {
+  color:#222222;
+}
+
+/*--------------------------------------------------------------
+# Testimonials Section
+--------------------------------------------------------------*/
