@@ -145,6 +145,13 @@ h6 {
   #hero {
     height: 100vh;
   }
+  .navbar_mobile_toggle {
+    display: block;
+  }
+
+  .header_navbar_links {
+    display: none !important;
+  }
 }
 
 /*--------------------------------------------------------------
